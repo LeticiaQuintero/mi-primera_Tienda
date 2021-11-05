@@ -19,17 +19,16 @@ function actualizar(){  //definimos la funcion
     } // solo si segundos es menor a 10 le cambiamos el valor de segundos agregando un 0 
     if (horas>12){ //solo si horas es mayor a 12 le pedimos que le reste 12 para tener el formato de 12 horas 
         // el orden de los condicionales permite saber que instrucciones se deben realizar antes 
-        var horas = horas-12
-    if(horas<10){ // despues de convertir el formato de horas ahora si se compara si es menor a 10 y cambiamos el valor agregando 0
+        var horaformato12 = horas-12
+    if(horaformato12<10){ // despues de convertir el formato de horas ahora si se compara si es menor a 10 y cambiamos el valor agregando 0
         
-            horas = "0" + horas
-        }
-        var  hora = horas + ":" + minutos +":" + segundos + "pm" // despues de ser calculado cada uno de los valores lo guardamos en un string que guardamos con el nombre de hora
-        var horas = horas + 12 //le sumamos 12 para que regrese al valor original y no entre al otro condicional
-        console.log(horas) 
+            horaformato12 = "0" + horaformato12
+     }
+        var  horameridiano = horaformato12 + ":" + minutos +":" + segundos + "pm" // despues de ser calculado cada uno de los valores lo guardamos en un string que guardamos con el nombre de hora
+        
     }
     else { //las instrucciones dentro de este condicional solo se ejecuta si no se cumple la condicion del primer if, es decir si horas es mas chico que 12 
-        var  hora = horas + ":" + minutos +":" + segundos + "am"
+        var  horameridiano = horas + ":" + minutos +":" + segundos + "am"
         
     }
     if (dia<10){
@@ -41,7 +40,7 @@ function actualizar(){  //definimos la funcion
 var fecha = dia+"/" +mes+ "/" + año
 var fechacompleta = document.querySelector(".Fecha")
 var horaCompleta = document.querySelector(".Hora")
-horaCompleta.innerText = hora
+horaCompleta.innerText = horameridiano
 fechacompleta.innerText = fecha
 
 setTimeout(actualizar,1000)
