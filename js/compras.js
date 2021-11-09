@@ -7,7 +7,7 @@ var TOTAL = costo * unidad
 alert(TOTAL)*/
 
 var preciopastel30 = Number(prompt("precio del pastel para 30 personas"))
-var unidades = Number(prompt("numero de pasteles"))
+/*var unidades = Number(prompt("numero de pasteles"))
 var totalpastel30 = preciopastel30 * unidades
 
 var preciopastel20 = Number(prompt("precio del pastel para 20 personas"))

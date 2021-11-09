@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pasteleria-Ruíz</title>
+        <script src="https://kit.fontawesome.com/07a224629b.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/PASTELERIA-RUÍZ.gif" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -37,6 +39,22 @@
     </header>
     <main>
         <p id="compras"> </p>
+
+       <form name="formulario">
+            <div class="formulario1"><input type="text" name="Pasteles" id="pasteles">
+            <label for="pasteles">Tipo de pasteles</label>
+            </div>
+           <div class="CANT-PERS"><select name="numero_pers" id="numero_pers">
+            <option value="1">pastel 30-personas</option>
+            <option value="2">pastel 20-personas</option>
+            <option value="3">pastel 15-personas</option>
+         </select></div>
+           <div>
+            <input type="number" id="no-productos" >
+            <label for="no-productos"> Numero de productos</label>
+            <button>cargar al carrito</button>
+           </div>
+        </form>
     </main>
 
 
