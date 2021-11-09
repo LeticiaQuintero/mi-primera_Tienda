@@ -37,7 +37,11 @@ function actualizar(){  //definimos la funcion
     if(mes<10){
         var mes = "0" + mes
     }
+
+
 var fecha = dia+"/" +mes+ "/" + año
+
+
 var fechacompleta = document.querySelector(".Fecha")
 var horaCompleta = document.querySelector(".Hora")
 horaCompleta.innerText = horameridiano

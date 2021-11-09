@@ -19,5 +19,7 @@ var Unidaeds = Number (prompt("numero de pasteles"))
 var totalpastel15 = preciopastel15 * Unidaeds
 
 var total = totalpastel15 + totalpastel20 +totalpastel30
-alert(total)
+
+var carritodeCompras = document.getElementById("compras")
+carritodeCompras.innerText = total
 //seleccionar el div de html que se va a imprimir//
