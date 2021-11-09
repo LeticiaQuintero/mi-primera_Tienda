@@ -79,11 +79,6 @@ header{
     grid-column: 3/4;
     grid-row: 2/3;
 }
-footer{
-    display: flex;
-    background-color:rgb(148, 169, 230);
-    height: 25vh;
-}
 img{
     height: 120px;
     width: 120px;
@@ -256,7 +251,7 @@ h4{
 .redondos{
     grid-column: 1/2;
     grid-row: 3/4;
-
+    
 }
 .variedad{
     grid-column: 3/8;
@@ -276,6 +271,7 @@ h4{
     justify-self: center;
 }
 #pay-entero{
+    display: flex;
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -283,6 +279,7 @@ h4{
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
+    justify-content: space-between;
 }
 #pay-peson{
     grid-column: 1/2;
@@ -292,4 +289,16 @@ h4{
     grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
+}
+footer{
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    background-color:rgb(148, 169, 230);
+    height: 25vh;
+}
+.contacto{
+    
+    justify-self: center;
+    justify-content: space-between;
 }
