@@ -20,14 +20,11 @@
         
         <nav class="barra-nav"> 
             <ul class="menu">
-                <li>PASTELES </li>
-                <li>PAN </li>
-                <li>PAYS </li>
-                <li>
-                    <a href="./compras.html">COMPRAS</a>
-                </li>
-                <li><a href="../index.html">INICIO</a></li>
-               
+                <li> <a href="pasteles.html">PASTELES</a>  </li>
+                    <li> <a href="pan.html">PAN </a> </li>
+                    <li><a href="pays.html"> PAYS Y FLANES</a> </li>
+                    <li><a href="compras.html">COMPRAS</a> </li>
+                    <li> <a href="../index.html">INICIO</a></li>
                 
             </ul>
         </nav>
@@ -38,28 +35,119 @@
         
     </header>
     <main>
+        <h1 id="compras">Compras</h1>
         <p id="compras"> </p>
+        
 
-       <form name="formulario">
-            <div class="formulario1"><input type="text" name="Pasteles" id="pasteles">
-            <label for="pasteles">Tipo de pasteles</label>
+       <form name="formulario" id="formpastel" class="formcompras">
+           <h2 class="pedidos">Pedidos</h2>
+            <div class="formulario1 pastelesformulario">
+              <input type="text" name="Pasteles" id="pasteles" required="required">
+              <label for="pasteles">Tipo de pasteles</label>
+            </div>
+           <div class="CANT-PERS">
+            <select name="numero_pers" id="numero_pers">
+               <option value="1">pastel 30-personas</option>
+               <option value="2">pastel 20-personas</option>
+               <option value="3">pastel 15-personas</option>
+            </select>
+           </div>
+           <div>
+            <input type="number" id="no-productos"  name="no-productos"  required="required" >
+            <label for="no-productos"> Numero de productos</label>
+           </div>
+          <button class="btn" type="submit">cargar al carrito</button>
+        </form>
+        <form name="grupo2" class="formcompras">
+            <h2 class="pedidos"> Panes</h2>
+            <div class="formulario2"><input type="text" name="Panes" id="panes"required="required">
+            <label for="panes">Tipo de pan</label>
             </div>
            <div class="CANT-PERS"><select name="numero_pers" id="numero_pers">
-            <option value="1">pastel 30-personas</option>
-            <option value="2">pastel 20-personas</option>
-            <option value="3">pastel 15-personas</option>
+            <option value="1">pan para 6 personas</option>
+            <option value="2">pan para 8 personas</option>
+            <option value="3">pan para 10 personas</option>
+            <option value="4">pan para 12 personas</option>
+            <option value="5">pan para 15 personas</option>
+        </select></div>
+        <div>
+         <input type="number" id="no-productos" required="required">
+         <label for="no-productos"> Numero de productos</label>
+        </div>
+        <button class="btn">cargar al carrito</button>
+       </form>
+        <form name="grupo3" class="formcompras">
+            <h2 class="pedidos">Reposteria</h2>
+            <div class="formulario3"><input type="text" name="pan" id="reposteria"required="required">
+            <label for="pan">Tipo de reposteria</label>
+            </div>
+           <div class="personales"><select name="personal" id="pesonal">
+            <option value="1">cupcake</option>
+            <option value="2">cuernito</option>
+            <option value="3">bigote</option>
+            <option value="4">trenza</option>
+            <option value="5">coronitas</option>
+
          </select></div>
            <div>
-            <input type="number" id="no-productos" >
+            <input type="number" id="no-productos" required="required">
             <label for="no-productos"> Numero de productos</label>
-            <button>cargar al carrito</button>
-           </div>
+        </div>
+        <button class="btn">cargar al carrito</button>
         </form>
+        <form name="grupo4" class="formcompras">
+            <h2 class="pedidos">Pay y flan enteros</h2>
+             <div class="formulario4"><input type="text" name="pay-flan" id="pay-flan"required="required">
+            <label for="pan">Tipo de pay o flan </label>
+            </div>
+            <div class="enteros"><select name="completos" id="completps">
+            <option value="1">pay de queso con mango</option>
+            <option value="2">pay de queso con zarzamoras</option>
+            <option value="3">pay de queso con chocolate</option>
+            <option value="4">pay de queso con limon</option>
+            <option value="5">pay de queso con fresas</option>
+         </select></div>
+           <div>
+            <input type="number" id="no-productos" required="required">
+            <label for="no-productos"> Numero de productos</label>
+        </div>
+        <button class="btn">cargar al carrito</button>
+        </form>
+        <form name="grupo5" class="formcompras">
+            <h2 class="pedidos">Pay y flan personal</h2>
+            <div class="formulario5"><input   type="text" name="pay-flan2" id="pay-flan2" required="required">
+           <label for="pan">Tipo de pay o flan personal</label>
+           </div>
+           <div class="unidades"><select name="individual" id="individual">
+           <option value="1">pay de queso con mango</option>
+           <option value="2">pay de queso con zarzamoras</option>
+           <option value="3">pay de queso con chocolate</option>
+           <option value="4">pay de queso con limon</option>
+           <option value="5">pay de queso con fresas</option>
+        </select></div>
+          <div>
+           <input type="number" id="no-productos" required="required">
+           <label for="no-productos"> Numero de productos</label>
+        </div>
+        <button class="btn">cargar al carrito</button>
+       </form>
     </main>
+    <footer>
+        <nav>
+            <ul class="contacto">
+                <li>
+                    <a href="https://wa.me/message/26YWXIRFO2ZHN1"> <i class="fab fa-whatsapp"></i>
+                    </a>
+ 
+                 </li>
+                 <li>
+                     contactos 5562903414 / 5530120173
+                 </li>
+            </ul>
+            
+        </nav>
+    </footer>
 
-
-    <h1>compras</h1>
-    
     <script src="../js/hora.js"></script>
     <script src="../js/compras.js"></script>
 </body>

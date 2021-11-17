@@ -22,4 +22,12 @@ var total = totalpastel15 + totalpastel20 +totalpastel30
 
 var carritodeCompras = document.getElementById("compras")
 carritodeCompras.innerText = total
-//seleccionar el div de html que se va a imprimir//
+//seleccionar el div de html que se va a imprimir//*/
+var formulario = document.querySelector("#compras")
+console.log(formulario)
+var precios = [350, 270, 180]
+console.log(precios[0])
+
+
+
+
