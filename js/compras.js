@@ -27,7 +27,13 @@ var formulario = document.querySelector("#compras")
 console.log(formulario)
 var precios = [350, 270, 180]
 console.log(precios[0])
+formulario.addEventListener("submit",(evento) =>{
+    evento.preventDefault()
+    console.log("presiona el botón")
+    var cantidad_productos = document.getElementById("cantidad_productos").value
+    console.log(cantidad_productos)
 
+})
 
 
 
