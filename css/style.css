@@ -310,8 +310,8 @@ footer{
 
     border: 2px ridge rgb(43, 255, 0);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px;
     padding: 10px;
     margin: 10px;
     background-color: rgba(5, 5, 5, 0.541);
@@ -319,8 +319,13 @@ footer{
 
 }
 .btn{
-    grid-column: 2/3;
-    background-color: purple;
+    grid-column: 1/2;
+    background-color: rgb(194, 126, 194);
+    height: 80%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: aqua;
+
     
 }
 .pedidos{

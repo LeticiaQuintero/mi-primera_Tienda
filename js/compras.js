@@ -6,7 +6,7 @@ var unidad = Number (prompt("precio por unidad"))
 var TOTAL = costo * unidad
 alert(TOTAL)*/
 
-var preciopastel30 = Number(prompt("precio del pastel para 30 personas"))
+//var preciopastel30 = Number(prompt("precio del pastel para 30 personas"))
 /*var unidades = Number(prompt("numero de pasteles"))
 var totalpastel30 = preciopastel30 * unidades
 
@@ -23,7 +23,7 @@ var total = totalpastel15 + totalpastel20 +totalpastel30
 var carritodeCompras = document.getElementById("compras")
 carritodeCompras.innerText = total
 //seleccionar el div de html que se va a imprimir//*/
-var formulario = document.querySelector("#compras")
+var formulario = document.querySelector("compras")
 console.log(formulario)
 var precios = [350, 270, 180]
 console.log(precios[0])
